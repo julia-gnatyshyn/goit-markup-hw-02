@@ -12,22 +12,20 @@
 </head>
 <body>
     <!--Шапка сайта-->
-    <header>
-        <div>
-            <nav>
-            <a href="/"><span>Web</span>Studio</a>
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+            <a class="logo" href=""><span>Web</span>Studio</a>
             <ul>
-                <li><a href="./index.html">Студия</a></li>
-                <li><a href="./portfolio.html">Портфолио</a></li>
-                <li><a href="#address">Контакты</a></li>
+                <li class="nav-link"><a href="./index.html">Студия</a></li>
+                <li class="nav-link"><a href="./portfolio.html">Портфолио</a></li>
+                <li class="nav-link"><a href="#address">Контакты</a></li>
             </ul>
-        </nav>
-        </div>
+            </nav>
 
-        <div>
-            <ul>
-                <li lang="en"><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
+            <ul class="contact">
+                <li class="contact-item" lang="en"><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                <li class="contact-item"><a href="tel:+380961111111">+38 096 111 11 11</a></li>
             </ul>
         </div>
     </header>
@@ -36,12 +34,15 @@
 
     <!--Hero-->
     <section>
+        <div class="container">
         <h1>Эффективные решения для вашего бизнеса</h1>
-       <button type="button">Заказать услугу</button> 
+        <button type="button">Заказать услугу</button> 
+        </div>
     </section>
 
     <!--Advantages-->
     <section>
+        <div class="container">
         <h2>Преимущества</h2>
         <ul>
             <li>
@@ -61,20 +62,24 @@
                 <p>Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
             </li>
         </ul>
+        </div>
     </section>
 
     <!--Information-->
     <section>
+        <div class="container">
         <h2>Чем мы занимаемся</h2>
         <ul>
             <li><a href=""><img src="./images/img.jpg" alt="Верстка" width="370"></a></li>
             <li><a href=""><img src="./images/box2.jpg" alt="Программирование" width="370"></a></li>
             <li><a href=""><img src="./images/box3.jpg" alt="Дизайн" width="370"></a></li>
         </ul>
+        </div>
     </section>
 
     <!--Team-->
     <section>
+        <div class="container">
         <h2>Наша команда</h2>
         <ul>
             <li>
@@ -106,18 +111,20 @@
                 </a>
             </li>
         </ul>
-
+        </div>
     </section>
     </main>
 
     <!--Footer-->
     <footer id="address">
+        <div class="container">
         <a href="/"><span>Web</span>Studio</a>
             <address>
             г. Киев, пр-т Леси Украинки, 26 <br>
             <a href="mailto:info@devstudio.com"><span lang="en">info@devstudio.com</span></a><br>
             <a href="tel:+380961111111">+38 096 111 11 11</a>
             </address> 
+        </div>
     </footer>
 </body>
 </html>

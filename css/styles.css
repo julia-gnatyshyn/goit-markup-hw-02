@@ -1,12 +1,43 @@
+:root {
+  --main-font: "Raleway", sans-serif;
+  --accent-font: "Roboto", sans-serif;
+  --main-color: #212121;
+  --hover-color: #2196f3;
+  --text-color: #757575;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 body {
-  font-family: "Roboto", sans-serif;
-  font-family: "Raleway", sans-serif;
+  font-family: var(--main-font);
+  color: var(--main-color);
+}
+.container {
+  width: 1200px;
+  margin: 0 auto;
 }
 ul {
   list-style: none;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+/* header */
+.nav {
+  color: var(--main-color);
+}
+.header .contact {
+  color: var(--text-color);
+}
+.nav .nav-link:hover,
+.nav .nav-link:focus {
+  color: var(--hover-color);
+}
+.contact .contact-item:hover,
+.contact .contact-item:focus {
+  color: var(--hover-color);
 }
