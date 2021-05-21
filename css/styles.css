@@ -4,6 +4,9 @@
   --main-color: #212121;
   --hover-color: #2196f3;
   --text-color: #757575;
+  --white-color: #ffffff;
+  --main-background-color: #ffffff;
+  --dark-background-color: #2f303a;
 }
 
 * {
@@ -13,7 +16,9 @@
 }
 body {
   font-family: var(--main-font);
+  font-style: normal;
   color: var(--main-color);
+  background-color: var(--main-background-color);
 }
 .container {
   width: 1200px;
@@ -26,7 +31,37 @@ a {
   color: inherit;
   text-decoration: none;
 }
+.hidden {
+  display: none;
+}
+.title {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.166;
+  letter-spacing: 0.03em;
+}
+.logo,
+.logo-1 {
+  font-family: var(--accent-font);
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.192;
+  letter-spacing: 0.03em;
+  color: var(--hover-color);
+}
+.logo-1 {
+  color: var(--main-color);
+}
+.logo-2 {
+  color: var(--white-color);
+}
 /* header */
+.header {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.142;
+  letter-spacing: 0.02em;
+}
 .nav {
   color: var(--main-color);
 }
@@ -40,4 +75,74 @@ a {
 .contact .contact-item:hover,
 .contact .contact-item:focus {
   color: var(--hover-color);
+}
+/* hero */
+.hero {
+  background-color: var(--dark-background-color);
+}
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.363;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--white-color);
+}
+.hero-button {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.875;
+  letter-spacing: 0.06em;
+  color: var(--white-color);
+  background-color: var(--hover-color);
+  padding: 10px 32px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+/* advantages */
+.advant {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.142;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.text {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 2;
+  letter-spacing: 0.03em;
+  color: var(--text-color);
+}
+/* team */
+.team {
+  background-color: #f5f4fa;
+}
+.name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.187;
+  letter-spacing: 0.03em;
+}
+.job {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.187;
+  letter-spacing: 0.03em;
+  color: var(--text-color);
+}
+/* footer */
+.footer {
+  background-color: var(--dark-background-color);
+}
+.address {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.714;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+.direction {
+  color: var(--white-color);
 }
