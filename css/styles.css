@@ -2,7 +2,7 @@
   --main-font: "Raleway", sans-serif;
   --accent-font: "Roboto", sans-serif;
   --main-color: #212121;
-  --hover-color: #2196f3;
+  --blue-color: #2196f3;
   --text-color: #757575;
   --white-color: #ffffff;
   --main-background-color: #ffffff;
@@ -20,9 +20,15 @@ body {
   color: var(--main-color);
   background-color: var(--main-background-color);
 }
+html,
+body {
+  width: 100%;
+}
+
 .container {
   width: 1200px;
   margin: 0 auto;
+  padding: 0 15px;
 }
 ul {
   list-style: none;
@@ -30,6 +36,14 @@ ul {
 a {
   color: inherit;
   text-decoration: none;
+}
+img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+button {
+  border: none;
 }
 .hidden {
   display: none;
@@ -41,13 +55,14 @@ a {
   letter-spacing: 0.03em;
 }
 .logo,
-.logo-1 {
+.logo-1,
+.logo-2 {
   font-family: var(--accent-font);
   font-weight: bold;
   font-size: 26px;
   line-height: 1.192;
   letter-spacing: 0.03em;
-  color: var(--hover-color);
+  color: var(--blue-color);
 }
 .logo-1 {
   color: var(--main-color);
@@ -69,12 +84,14 @@ a {
   color: var(--text-color);
 }
 .nav .nav-link:hover,
-.nav .nav-link:focus {
-  color: var(--hover-color);
+.nav .nav-link:focus,
+.nav .nav-link:active {
+  color: var(--blue-color);
 }
-.contact .contact-item:hover,
-.contact .contact-item:focus {
-  color: var(--hover-color);
+.contact .contact-link:hover,
+.contact .contact-link:focus,
+.contact .contact-link:active {
+  color: var(--blue-color);
 }
 /* hero */
 .hero {
@@ -94,11 +111,12 @@ a {
   line-height: 1.875;
   letter-spacing: 0.06em;
   color: var(--white-color);
-  background-color: var(--hover-color);
+  background-color: var(--blue-color);
   padding: 10px 32px;
   border-radius: 4px;
   cursor: pointer;
 }
+
 /* advantages */
 .advant {
   font-weight: bold;
@@ -145,4 +163,41 @@ a {
 }
 .direction {
   color: var(--white-color);
+}
+.address .contact-link:hover,
+.address .contact-link:focus,
+.address .contact-link:active {
+  color: var(--blue-color);
+}
+/* portfolio */
+.p-button {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.625;
+  letter-spacing: 0.03em;
+  color: var(--main-color);
+  background-color: #f5f4fa;
+  padding: 6px 22px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.buttons .p-button:focus,
+.buttons .p-button:hover,
+.buttons .p-button:active {
+  color: var(--white-color);
+  background-color: var(--blue-color);
+}
+.p-title {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--main-color);
+}
+.p-text {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.875;
+  letter-spacing: 0.03em;
+  color: var(--text-color);
 }
