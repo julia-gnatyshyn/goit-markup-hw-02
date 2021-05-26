@@ -88,6 +88,7 @@ button {
 .nav .nav-link:active {
   color: var(--blue-color);
 }
+
 .contact .contact-link:hover,
 .contact .contact-link:focus,
 .contact .contact-link:active {
