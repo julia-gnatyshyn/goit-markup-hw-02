@@ -1,6 +1,6 @@
 :root {
-  --main-font: "Raleway", sans-serif;
-  --accent-font: "Roboto", sans-serif;
+  --main-font: "Roboto", sans-serif;
+  --accent-font: "Raleway", sans-serif;
   --main-color: #212121;
   --blue-color: #2196f3;
   --text-color: #757575;
@@ -44,6 +44,7 @@ img {
 }
 button {
   border: none;
+  text-decoration: none;
 }
 .hidden {
   display: none;
@@ -107,6 +108,7 @@ button {
   color: var(--white-color);
 }
 .hero-button {
+  font-family: inherit;
   font-weight: bold;
   font-size: 16px;
   line-height: 1.875;
@@ -172,6 +174,7 @@ button {
 }
 /* portfolio */
 .p-button {
+  font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.625;
